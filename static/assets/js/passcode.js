@@ -1,19 +1,10 @@
-//ALERT
-function promptalert() 
-{
-    var pass_entered;
-    var password="admin";
+function done() { 
+    document.getElementById("popup").style.display = "none";
+    var password = document.getElementById("admin").value;
     
-    while (pass_entered!=password) {
-        pass_entered=prompt('Enter Passcode:','');
-    }
-    
-    self.close();
-    !";
-        blank();
-    } 
-    else {
-        txt = "You pressed Cancel!";
-    }
-    console.log(txt);
+    //DO STUFF WITH PASSWORD HERE    
+};
+
+function showPopup() {
+     document.getElementById("popup").style.display = "block";
 }
