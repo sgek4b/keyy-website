@@ -1,14 +1,10 @@
-<head>
-<script language="JavaScript">
-
-var pass_entered;
-var password="admin";
-
-while (pass_entered!=password) {
-    pass_entered=prompt('Enter Passcode:','');
+function promptalert() {
+    if (confirm("Do you want to open this website in an about:blank page? \ Press ok to open website in a blank tab! \ Press Cancel to continue to normal website!")) {
+        txt = "You pressed OK!";
+        blank();
+    } 
+    else {
+        txt = "You pressed Cancel!";
+    }
+    console.log(txt);
 }
-
-self.close();
-
-</script>
-</head>
