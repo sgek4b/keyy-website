@@ -8,7 +8,7 @@ function blank(){
     if (!inFrame && !navigator.userAgent.includes("Firefox")) {
         const popup = open("about:blank", "_blank")
         if (!popup || popup.closed) {
-            alert("Popups are disabled!")
+        
         } else {
             const doc = popup.document
             const iframe = doc.createElement("iframe")
@@ -51,8 +51,7 @@ function blank(){
         document.getElementById("MyClock").innerText = time;
         document.getElementById("MyClock").textContent = time;
         
-        setTimeout(clockTime, 1000);
-        
+                
     };
     clockTime();
     document.addEventListener('keypress', function (e) {
